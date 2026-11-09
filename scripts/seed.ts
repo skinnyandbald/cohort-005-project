@@ -1786,7 +1786,8 @@ This course is still in draft while the cluster examples are rewritten against t
   // - Emma: enrolled in both courses (nearly complete in course 1, mid-way in course 2)
   // - James: enrolled in course 1 only (completed)
   // - Olivia: enrolled in both courses (just started course 1, mid-way in course 2)
-  // - Liam: enrolled in course 2 only (just started, abandoned)
+  // - Liam: enrolled in course 2 (just started, abandoned); his course 1
+  //   enrollment is added with his Refund Request further down
   // - Sophia: enrolled in course 1 only (recently enrolled, barely started)
 
   db.insert(schema.enrollments)
@@ -1810,7 +1811,8 @@ This course is still in draft while the cluster examples are rewritten against t
 
   // ─── Course Ratings ───
   // Star ratings from enrolled students only. Not everyone rates.
-  // Course 1 averages 4.3 (4 ratings), course 2 averages 4.5 (2 ratings).
+  // Course 1 averages 4.3 (4 ratings) here, and 4.2 (5 ratings) once Liam's
+  // rating is added with his Refund Request. Course 2 averages 4.5 (2 ratings).
 
   db.insert(schema.courseRatings)
     .values([
@@ -2251,7 +2253,7 @@ This course is still in draft while the cluster examples are rewritten against t
     .values({
       userId: students[1].id, // James — bought course 1 with PPP discount (India)
       courseId: course1.id,
-      amountPaid: 2500,
+      amountPaid: 3950,
       country: "IN",
       createdAt: daysAgo(45),
     })
