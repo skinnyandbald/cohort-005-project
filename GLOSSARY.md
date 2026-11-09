@@ -7,7 +7,7 @@ Cadence sells video courses to learners. This glossary covers the language aroun
 ### Refunds
 
 **Refund Request**:
-A learner's ask, with their reason, to get back what they paid for a purchase, which the team approves or declines. A purchase can have only one undecided Refund Request at a time, and none after an approved one.
+A learner's ask, with their reason, to get back what they paid for a purchase. The team approves or declines each Refund Request, and a purchase can have only one undecided Refund Request at a time and none after an approved one.
 _Avoid_: Refund (for the ask itself), Cancellation, Reversal, Chargeback
 
 **Open Refund Request**:
