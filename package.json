@@ -47,7 +47,7 @@
   "devDependencies": {
     "@ai-hero/sandcastle": "^0.14.0",
     "@clack/prompts": "^1.7.0",
-    "@react-router/dev": "8.3.0",
+    "@react-router/dev": "8.5.1",
     "@tailwindcss/vite": "^4.1.13",
     "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22",
